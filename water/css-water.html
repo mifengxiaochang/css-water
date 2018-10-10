@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>water</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+  .wave{
+  position:absolute;
+  top:calc((100% - 30px)/2);
+  left:calc((100% - 30px)/2);
+  width:30px;
+  height:30px;
+  border-radius:300px;
+  background-image: url(https://lh4.googleusercontent.com/-4pj9PYjGaeE/U8joS5psCeI/AAAAAAAA7ds/3JE4upTx3Hc/s000/bg.jpg);
+  background-attachment: fixed;
+  background-position: center center;
+}
+.wave0{
+  /* background:#f00; */
+  z-index:2;
+  background-size:auto 106%;
+  -webkit-animation:w 1s forwards;
+}
+.wave1{
+  background-size:auto 102%;
+  z-index:3;
+  -webkit-animation:w 1s .2s forwards;
+}
+.wave2{
+  background-size:auto 104%;
+  z-index:4;
+  -webkit-animation:w 1s .4s forwards;
+}
+.wave3{
+  background-size:auto 101%;
+  z-index:5;
+  -webkit-animation:w 1s .5s forwards;
+}
+.wave4{
+  background-size:auto 102%;
+  z-index:6;
+  -webkit-animation:w 1s .8s forwards;
+}
+.wave5{
+  background-size:auto 100%;
+  z-index:7;
+  -webkit-animation:w 1s 1s forwards;
+}
+@-webkit-keyframes w{
+  0%{
+    top:calc((100% - 30px)/2);
+    left:calc((100% - 30px)/2);
+    width:30px;
+    height:30px;
+  }
+  100%{
+    top:calc((100% - 300px)/2);
+    left:calc((100% - 300px)/2);
+    width:300px;
+    height:300px;
+  }
+}
+  </style>
+</head>
+<body>
+  <div class="wave wave5"></div>
+  <div class="wave wave4"></div>
+  <div class="wave wave3"></div>
+  <div class="wave wave2"></div>
+  <div class="wave wave1"></div>
+  <div class="wave wave0"></div>
+</body>
+</html>
